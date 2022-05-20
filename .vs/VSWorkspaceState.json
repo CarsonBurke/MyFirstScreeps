@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\prototypes"
   ],
-  "SelectedNode": "\\D:\\Repos\\MyFirstScreeps",
+  "SelectedNode": "\\prototypes\\prototype.creep.js",
   "PreviewInSolutionExplorer": false
 }

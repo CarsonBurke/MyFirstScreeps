@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\prototypes",
+    "\\src\\roles"
   ],
-  "SelectedNode": "\\D:\\Repos\\MyFirstScreeps",
+  "SelectedNode": "\\src\\main.js",
   "PreviewInSolutionExplorer": false
 }

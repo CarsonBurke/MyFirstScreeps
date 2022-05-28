@@ -4,6 +4,9 @@ require('./prototypes/prototype.tower');
 require('./prototypes/prototype.spawn');
 require('./prototypes/prototype.link');
 
+
+
+//Main Loop
 module.exports.loop = function() {
     // check for memory entries of died creeps by iterating over Memory.creeps
     for (let name in Memory.creeps) {

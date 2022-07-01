@@ -6,4 +6,4 @@ Working Progress of my Attempt at automation in Screeps
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://forthebadge.com)
 
-Coded by Ross Hamilton
+Coded by Ross Hamilton And LittleBitBlue

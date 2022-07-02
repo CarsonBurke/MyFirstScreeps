@@ -14,7 +14,7 @@ var roleHarvester = {
                 creep.moveTo(sources[0], { visualizePathStyle: { stroke: '#ffaa00' } });
             }
         }
-        else
+        else { 
             //If creeps free space is 0 i.e. is full, look for structures filtered by type which have space greater than 0
             var targets = creep.room.find(FIND_STRUCTURES, {
                 filter: (structure) => {
@@ -28,12 +28,12 @@ var roleHarvester = {
             //If a target requires energy
             if (targets.length > 0) {
                 //if not in range 
-            if (creep.transfer(targets[0], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
+                if (creep.transfer(targets[0], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                     //Move to within range
                     creep.moveTo(targets[0], { visualizePathStyle: { stroke: '#ffffff' } });
                 }
             }
-         }
+        }
     }
 };
 

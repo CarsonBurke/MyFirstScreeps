@@ -1,12 +1,14 @@
-var roleHarvester = require('./roles/role.harvester');
-var roleUpgrader = require('./roles/role.upgrader');
-var roleBuilder = require('./roles/role.builder');
-var distanceTransform = require('./basePlanning/distanceTransform');
-var floodFill = require('./basePlanning/floodFill');
+var roleHarvester = require('role.harvester');
+var roleUpgrader = require('role.upgrader');
+var roleBuilder = require('role.builder');
+
 
 // Main Game loop
 module.exports.loop = function () {
 
+    //Test visual
+    new RoomVisual().text("Home", 25, 25, { color: 'blue', font: 0.8 });
+    
     //for every name in array of creeps
     for (var name in Game.creeps) {
         //declare a variable creep with value of the current creeps name

@@ -1,14 +1,25 @@
+//Memory.visuals = false;
+
+//method: run(){
+
+//	//this is where we set up all the memory stuff on a fresh install of the bot
+
+//	//by default visuals off
+//	memory.visuals = false;
+
+//	//Example
+//	//memory.maxHaulers = 5;
+//}
 
 
-Memory.visuals = false;
 
-method: run(){
+var memorySetup = {
 
-	//this is where we set up all the memory stuff on a fresh install of the bot
+    run: function () {
 
-	//by default visuals off
-	memory.visuals = false;
+        Memory.minHarvesters = 2;
+        Memory.minBuilders = 2;
+        Memory.minUpgraders = 1;
 
-	//Example
-	//memory.maxHaulers = 5;
+    }
 }

@@ -25,27 +25,20 @@ module.exports.loop = function () {
     //new RoomVisual('W1N1').rect(points, 9, 9, {fill: 'transparent', stroke: '#f00'});
     //new RoomVisual('W1N1').rect(0, 0.5, 1, 1, {fill: 'transparent', stroke: '#f00'}); 
 
+    const roleManagers = {
+        harvester: roleHarvester,
+        upgrader: roleUpgrader,
+        builder: roleBuilder
+    }
+    
+    let creep
     
     //for every name in array of creeps
-    for (var name in Game.creeps) {
+    for (const name in Game.creeps) {
         //declare a variable creep with value of the current creeps name
-        var creep = Game.creeps[name];
-
-        //if the creeps role is harvester 
-        if (creep.memory.role == 'harvester') {
-            //Run harvester logic
-            roleHarvester.run(creep);
-        }
-        //if the creeps role is upgrader
-        if (creep.memory.role == 'upgrader') {
-            //Run upgrader logic
-            roleUpgrader.run(creep);
-        }
-        //if the creeps role is builder
-        if (creep.memory.role == 'builder') {
-            //Run builder logic
-            roleBuilder.run(creep);
-        }
+        creep = Game.creeps[name];
+        
+        roleManager[creep.memory.role](creep)
     }
     if (memory.visuals) {
         displayVisuals();
